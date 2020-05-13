@@ -1,5 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    String
+Library    Collections
+Library    OperatingSystem
 
 *** Variables ***
 ${URL}    https://www.eficode.com
@@ -16,3 +19,6 @@ User has account for web page
 
 User has logged in with her/his password
   No operation
+  
+User has made her/his shopping
+  Get Window position

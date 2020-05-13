@@ -3,12 +3,9 @@ Resource    resource.robot
 Suite Setup    Open browser to registration page
 Suite Teardown    Close Browser
 
-*** Variables ***
-${URL}    https://www.eficode.com
-
 *** Test Cases ***
 Vacation booking without registration
-  [Tags]    KAS-40
+  [Tags]    KAS-28
   Given User has no account for web page
   And User is logged in
   When User press “New booking without registration” button at web page

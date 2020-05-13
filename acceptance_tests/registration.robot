@@ -3,10 +3,8 @@ Resource    resource.robot
 Suite Setup    Open browser to registration page
 Suite Teardown    Close Browser
 
-*** Variables ***
-${URL}    https://www.eficode.com
-
 *** Test Cases ***
+
 Registration
   [Tags]    KAS-10
   Given User has no account for web page
