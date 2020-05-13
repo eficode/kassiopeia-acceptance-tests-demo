@@ -24,6 +24,14 @@ Booking cancellation
   And User select proper booking from list
   Then User is able to cancel her/his booking
 
+Vacation booking
+  [Tags]    KAS-22
+  Given User has account for web page
+  And User has logged in with her/his password
+  When User press New booking button at web page
+  And User select proper booking from list
+  Then User is able to make her/his booking
+
 *** Keywords ***
 User is logged in
   Get Window position
@@ -31,9 +39,6 @@ User is logged in
 User press “New booking without registration” button at web page
   No Operation
 
-User is able to make her/his booking
-  Set Window size   800    600
-  
 User has made at least one booking
   Get Window position
 
@@ -47,6 +52,14 @@ User select proper booking from list
   Get Window position
 
 User is able to cancel her/his booking
-  No operation   
+  No operation 
+
+User press New booking button at web page
+  Set Window size   800    600
+
+User is able to make her/his booking
+  No operation
+
+ 
 
 

@@ -28,9 +28,6 @@ User has not logged in
 User press New Registration button at web page
   Set Selenium Speed    0.5 s
 
-User is able to make her/his registration
-  Get Window position
-
 User has mobile account for 2 Factor authentication
   Set Window position   100    200
 
@@ -39,3 +36,6 @@ User authenticate himself/herself using mobile app
 
 User is authorized to access web services
   Run keywords    User has no account for web page
+
+User is able to make her/his registration
+  Get Window position
