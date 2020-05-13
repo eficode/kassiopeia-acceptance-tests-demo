@@ -9,7 +9,7 @@ ${URL}    https://www.eficode.com
 
 *** Keywords ***
 Open browser to registration page
-  Open browser    ${URL}
+  Open browser    ${URL}    chrome
   
 User has no account for web page
   Set Window position   100    200
@@ -19,6 +19,6 @@ User has account for web page
 
 User has logged in with her/his password
   No operation
-  
+
 User has made her/his shopping
   Get Window position
