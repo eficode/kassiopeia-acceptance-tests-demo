@@ -1,7 +1,5 @@
 *** Settings ***
 Resource    resource.robot
-Suite Setup    Open browser to registration page
-Suite Teardown    Close Browser
 
 *** Test Cases ***
 Vacation booking without registration
@@ -31,28 +29,28 @@ Vacation booking
 
 *** Keywords ***
 User is logged in
-  Get Window position
+  Log to console    Hi all!
 
 User press “New booking without registration” button at web page
   No Operation
 
 User has made at least one booking
-  Get Window position
+  Get time
 
 Booking is NOT in past
-  Set Window position   100    200
+  Get variables
 
 User press Cancel booking button at web page
   No Operation
 
 User select proper booking from list
-  Get Window position
+  Log to console    Hello world!
 
 User is able to cancel her/his booking
   No operation 
 
 User press New booking button at web page
-  Set Window size   800    600
+  Get time
 
 User is able to make her/his booking
   No operation

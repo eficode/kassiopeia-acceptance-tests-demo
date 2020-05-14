@@ -1,7 +1,5 @@
 *** Settings ***
 Resource    resource.robot
-Suite Setup    Open browser to registration page
-Suite Teardown    Close Browser
 
 *** Test Cases ***
 
@@ -21,13 +19,13 @@ Two factor authentication with mobile
 *** Keywords ***
 
 User has not logged in
-  Set Window size   800    600
+  Set log level    INFO
 
 User press New Registration button at web page
-  Set Selenium Speed    0.5 s
+  No operation
 
 User has mobile account for 2 Factor authentication
-  Set Window position   100    200
+  Log to console    Hello console!
 
 User authenticate himself/herself using mobile app
   No Operation
@@ -36,4 +34,4 @@ User is authorized to access web services
   Run keywords    User has no account for web page
 
 User is able to make her/his registration
-  Get Window position
+  Get time
