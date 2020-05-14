@@ -4,6 +4,7 @@ Suite Setup    Open browser to registration page
 Suite Teardown    Close Browser
 
 *** Test Cases ***
+  [Tags]    KAS-188
 Payment option with Mobile bank application
   [Tags]    KAS-40
   Given User has account for web page
@@ -14,7 +15,7 @@ Payment option with Mobile bank application
   Then User is able to pay with her/his Mobile Bank application
 
 Payment option with Debit card
-  [Tags]    KAS-39
+  [Tags]    KAS-39    failed
   Given User has account for web page
   And User has logged in with her/his password
   And User has made her/his shopping
@@ -32,7 +33,7 @@ Payment option with Paypal account
   Then User is able to pay with her/his Paypal account
 
 Payment option with Credit card
-  [Tags]    KAS-37
+  [Tags]    KAS-37    failed
   Given User has account for web page
   And User has logged in with her/his password
   And User has made her/his shopping
