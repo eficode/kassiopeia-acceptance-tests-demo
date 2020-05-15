@@ -45,10 +45,10 @@ Payment option with Credit card
 
 *** Keywords ***
 Random value from list
-    @{Example}=     Create List     1  2  3  4  5  6 
+    @{Example}=     Create List     1  2  3  4  5  6  7  8  9  10 
     ${value}=   Evaluate    random.sample(${example},1)     random
     Log to console      \nvalue: ${value}
-    Run keyword if    ${value} < ['5']     User has made her/his shopping   ELSE    none
+    Run keyword if    ${value} < ['7']     User has made her/his shopping   ELSE    none
 
 User has valid Mobile Bank application
   No operation
