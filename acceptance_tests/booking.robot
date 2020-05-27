@@ -3,14 +3,14 @@ Resource    resource.robot
 
 *** Test Cases ***
 Vacation booking without registration
-  [Tags]    KAS-28    KAS-257
+  [Tags]    KAS-28    KAS-257    KAS-265
   Given User has no account for web page
   And User is logged in
   When User press “New booking without registration” button at web page
   Then User is able to make her/his booking
 
 Booking cancellation
-  [Tags]    KAS-26    KAS-257
+  [Tags]    KAS-26    KAS-257    KAS-265
   Given User has account for web page
   And User has logged in with her/his password
   And User has made at least one booking
@@ -20,7 +20,7 @@ Booking cancellation
   Then User is able to cancel her/his booking
 
 Vacation booking
-  [Tags]    KAS-22    KAS-257
+  [Tags]    KAS-22    KAS-257    KAS-265
   Given User has account for web page
   And User has logged in with her/his password
   When User press New booking button at web page

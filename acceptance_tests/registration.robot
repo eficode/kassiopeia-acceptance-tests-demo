@@ -4,14 +4,14 @@ Resource    resource.robot
 *** Test Cases ***
 
 Registration
-  [Tags]    KAS-10    KAS-255
+  [Tags]    KAS-10    KAS-255    KAS-263
   Given User has no account for web page
   And User has not logged in
   When User press New Registration button at web page
   Then User is able to make her/his registration
 
 Two factor authentication with mobile
-  [Tags]    KAS-49    KAS-255
+  [Tags]    KAS-49    KAS-255   KAS-263
   Given User has mobile account for 2 Factor authentication
   When User authenticate himself/herself using mobile app
   Then User is authorized to access web services
