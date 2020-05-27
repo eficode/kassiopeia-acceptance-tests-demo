@@ -4,7 +4,7 @@ Resource    resource.robot
 *** Test Cases ***
   
 Payment option with Mobile bank application
-  [Tags]    KAS-40    KAS-247    KAS-245    KAS-264    KAS-248
+  [Tags]    KAS-40    KAS-247    KAS-245    KAS-264
   Given User has account for web page
   And User has logged in with her/his password
   Random value from list
@@ -14,7 +14,7 @@ Payment option with Mobile bank application
   Then User is able to pay with her/his Mobile Bank application
 
 Payment option with Debit card
-  [Tags]    KAS-39    KAS-247    KAS-241    KAS-264    KAS-248
+  [Tags]    KAS-39    KAS-247    KAS-241    KAS-264
   Given User has account for web page
   And User has logged in with her/his password
   Random value from list
@@ -24,7 +24,7 @@ Payment option with Debit card
   Then User is able to pay with her/his Debit card
 
 Payment option with Paypal account
-  [Tags]    KAS-38    KAS-247    KAS-243    KAS-264    KAS-248
+  [Tags]    KAS-38    KAS-247    KAS-243    KAS-264
   Given User has account for web page
   And User has logged in with her/his password
   Random value from list
@@ -34,7 +34,7 @@ Payment option with Paypal account
   Then User is able to pay with her/his Paypal account
 
 Payment option with Credit card
-  [Tags]    KAS-37    KAS-247    KAS-240    KAS-264    KAS-248
+  [Tags]    KAS-37    KAS-247    KAS-240    KAS-264
   Given User has account for web page
   And User has logged in with her/his password
   Random value from list
