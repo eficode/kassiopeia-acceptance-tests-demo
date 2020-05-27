@@ -10,7 +10,7 @@ Vacation booking without registration
   Then User is able to make her/his booking
 
 Booking cancellation
-  [Tags]    KAS-26    KAS-257    KAS-265
+  [Tags]    KAS-26    KAS-265
   Given User has account for web page
   And User has logged in with her/his password
   And User has made at least one booking
@@ -20,7 +20,7 @@ Booking cancellation
   Then User is able to cancel her/his booking
 
 Vacation booking
-  [Tags]    KAS-22    KAS-257    KAS-265
+  [Tags]    KAS-22    KAS-265
   Given User has account for web page
   And User has logged in with her/his password
   When User press New booking button at web page
